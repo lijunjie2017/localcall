@@ -1,0 +1,32 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-callkit": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-iosrtc": {
+      "MANUAL_INIT_AUDIO_DEVICE": "FALSE",
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-networkinterface": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    }
+  }
+}

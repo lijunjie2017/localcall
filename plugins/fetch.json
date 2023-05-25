@@ -1,0 +1,68 @@
+{
+  "cordova-plugin-callkit": {
+    "source": {
+      "type": "registry",
+      "id": "github:hit0907/cordova-plugin-callkit"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-voip-local-server": {
+    "source": {
+      "type": "registry",
+      "id": "git+https://github.com/hit0907/cordova-plugin-voip-local-server.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-android-permissions": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-android-permissions@1.1.2"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-iosrtc": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-iosrtc@6.0.20"
+    },
+    "is_top_level": false,
+    "variables": {
+      "MANUAL_INIT_AUDIO_DEVICE": "FALSE"
+    }
+  },
+  "cordova-plugin-networkinterface": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/salbahra/cordova-plugin-networkinterface"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-webserver": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/bykof/cordova-plugin-webserver"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-device": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-device"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-add-swift-support": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-add-swift-support@2.0.2"
+    },
+    "is_top_level": false,
+    "variables": {}
+  }
+}

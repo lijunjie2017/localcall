@@ -1,0 +1,67 @@
+{
+  "_from": "git+https://github.com/salbahra/cordova-plugin-networkinterface.git",
+  "_id": "cordova-plugin-networkinterface@2.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-networkinterface",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/salbahra/cordova-plugin-networkinterface",
+    "rawSpec": "https://github.com/salbahra/cordova-plugin-networkinterface",
+    "saveSpec": "git+https://github.com/salbahra/cordova-plugin-networkinterface.git",
+    "fetchSpec": "https://github.com/salbahra/cordova-plugin-networkinterface.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/salbahra/cordova-plugin-networkinterface.git#03444047457ffd6cf57391150231ec6717cd60f5",
+  "_spec": "https://github.com/salbahra/cordova-plugin-networkinterface",
+  "_where": "D:\\workspace\\cordova-callkit-app",
+  "author": {
+    "name": "Samer Albahra, tombolaLtd"
+  },
+  "bugs": {
+    "url": "https://github.com/salbahra/cordova-plugin-networkinterface/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-networkinterface",
+    "platforms": [
+      "ios",
+      "android",
+      "browser",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "This plugin allows your application to retrieve the local wifi address and http proxy information.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.1.0"
+    }
+  ],
+  "homepage": "https://github.com/salbahra/cordova-plugin-networkinterface#readme",
+  "keywords": [
+    "local",
+    "ip",
+    "wifi",
+    "network",
+    "proxy",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-browser",
+    "cordova-windows"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-networkinterface",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salbahra/cordova-plugin-networkinterface.git"
+  },
+  "version": "2.0.0"
+}

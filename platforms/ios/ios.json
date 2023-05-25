@@ -1,0 +1,201 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"CordovaCall\"><param name=\"ios-package\" value=\"CordovaCall\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"iosrtcPlugin\"><param name=\"ios-package\" value=\"iosrtcPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"networkinterface\"><param name=\"ios-package\" onload=\"true\" value=\"CDVNetworkInterface\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Webserver\"><param name=\"ios-package\" value=\"Webserver\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Info.plist": {
+        "parents": {
+          "UIBackgroundModes": [
+            {
+              "xml": "<array><string>fetch</string><string>remote-notification</string><string>voip</string></array>",
+              "count": 1
+            }
+          ],
+          "ManualInitAudioDevice": [
+            {
+              "xml": "<string>FALSE</string>",
+              "count": 1
+            }
+          ],
+          "NSCameraUsageDescription": [
+            {
+              "xml": "<string>This Application uses your camera to make video calls.</string>",
+              "count": 1
+            }
+          ],
+          "NSContactsUsageDescription": [
+            {
+              "xml": "<string>This Application needs access to your contacts in order to be able to call them.</string>",
+              "count": 1
+            }
+          ],
+          "NSMicrophoneUsageDescription": [
+            {
+              "xml": "<string>This Application uses your microphone to make calls.</string>",
+              "count": 1
+            }
+          ],
+          "NSBluetoothAlwaysUsageDescription": [
+            {
+              "xml": "<string>This Application uses your wireless headphones and microphone to make calls.</string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Debug.plist": {
+        "parents": {
+          "aps-environment": [
+            {
+              "xml": "<string>development</string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Release.plist": {
+        "parents": {
+          "aps-environment": [
+            {
+              "xml": "<string>production</string>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-callkit": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-iosrtc": {
+      "MANUAL_INIT_AUDIO_DEVICE": "FALSE",
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-networkinterface": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-webserver": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-voip-local-server": {
+      "MANUAL_INIT_AUDIO_DEVICE": "FALSE",
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-callkit.VoIPPushNotification",
+      "file": "plugins/cordova-plugin-callkit/www/VoIPPushNotification.js",
+      "pluginId": "cordova-plugin-callkit",
+      "clobbers": [
+        "VoIPPushNotification"
+      ]
+    },
+    {
+      "id": "cordova-plugin-callkit.CordovaCall",
+      "file": "plugins/cordova-plugin-callkit/www/CordovaCall.js",
+      "pluginId": "cordova-plugin-callkit",
+      "clobbers": [
+        "cordova.plugins.CordovaCall"
+      ]
+    },
+    {
+      "id": "cordova-plugin-android-permissions.Permissions",
+      "file": "plugins/cordova-plugin-android-permissions/www/permissions-dummy.js",
+      "pluginId": "cordova-plugin-android-permissions",
+      "clobbers": [
+        "cordova.plugins.permissions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-iosrtc.Plugin",
+      "file": "plugins/cordova-plugin-iosrtc/www/cordova-plugin-iosrtc.js",
+      "pluginId": "cordova-plugin-iosrtc",
+      "clobbers": [
+        "cordova.plugins.iosrtc"
+      ]
+    },
+    {
+      "id": "cordova-plugin-networkinterface.networkinterface",
+      "file": "plugins/cordova-plugin-networkinterface/www/networkinterface.js",
+      "pluginId": "cordova-plugin-networkinterface",
+      "clobbers": [
+        "window.networkinterface"
+      ]
+    },
+    {
+      "id": "cordova-plugin-webserver.webserver",
+      "file": "plugins/cordova-plugin-webserver/webserver.js",
+      "pluginId": "cordova-plugin-webserver",
+      "clobbers": [
+        "webserver"
+      ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "id": "cordova-plugin-voip-local-server.VoIPLocalServer",
+      "file": "plugins/cordova-plugin-voip-local-server/www/voip-local-server.js",
+      "pluginId": "cordova-plugin-voip-local-server",
+      "clobbers": [
+        "VoIPLocalServer"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-callkit": "1.1.0",
+    "cordova-plugin-android-permissions": "1.1.2",
+    "cordova-plugin-iosrtc": "6.0.20",
+    "cordova-plugin-networkinterface": "2.0.0",
+    "cordova-plugin-add-swift-support": "2.0.2",
+    "cordova-plugin-webserver": "1.1.0",
+    "cordova-plugin-device": "2.0.3",
+    "cordova-plugin-voip-local-server": "1.0.0"
+  }
+}

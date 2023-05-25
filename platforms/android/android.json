@@ -1,0 +1,217 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Permissions\"><param name=\"android-package\" value=\"com.android.plugins.Permissions\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"CordovaCall\"><param name=\"android-package\" value=\"com.dmarc.cordovacall.CordovaCall\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"networkinterface\"><param name=\"android-package\" value=\"com.albahra.plugin.networkinterface.networkinterface\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.BIND_TELECOM_CONNECTION_SERVICE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CALL_PHONE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.MANAGE_OWN_CALLS\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+              "count": 2
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.camera\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.camera.autofocus\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.camera2.full\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.camera2.autofocus\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECORD_VIDEO\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:glEsVersion=\"0x00020000\" android:required=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.webkit.PermissionRequest\" />",
+              "count": 1
+            }
+          ],
+          "/manifest/application": [
+            {
+              "xml": "<service android:name=\"com.dmarc.cordovacall.MyConnectionService\" android:permission=\"android.permission.BIND_TELECOM_CONNECTION_SERVICE\"><intent-filter><action android:name=\"android.telecom.ConnectionService\" /></intent-filter></service>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Webserver\"><param name=\"android-package\" value=\"org.apache.cordova.plugin.Webserver\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-callkit": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-iosrtc": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-networkinterface": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-webserver": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    },
+    "cordova-plugin-voip-local-server": {
+      "PACKAGE_NAME": "com.hit.dev.cordovacall"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-android-permissions.Permissions",
+      "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
+      "pluginId": "cordova-plugin-android-permissions",
+      "clobbers": [
+        "cordova.plugins.permissions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-callkit.VoIPPushNotification",
+      "file": "plugins/cordova-plugin-callkit/www/VoIPPushNotification.js",
+      "pluginId": "cordova-plugin-callkit",
+      "clobbers": [
+        "VoIPPushNotification"
+      ]
+    },
+    {
+      "id": "cordova-plugin-callkit.CordovaCall",
+      "file": "plugins/cordova-plugin-callkit/www/CordovaCall.js",
+      "pluginId": "cordova-plugin-callkit",
+      "clobbers": [
+        "cordova.plugins.CordovaCall"
+      ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "id": "cordova-plugin-networkinterface.networkinterface",
+      "file": "plugins/cordova-plugin-networkinterface/www/networkinterface.js",
+      "pluginId": "cordova-plugin-networkinterface",
+      "clobbers": [
+        "window.networkinterface"
+      ]
+    },
+    {
+      "id": "cordova-plugin-webserver.webserver",
+      "file": "plugins/cordova-plugin-webserver/webserver.js",
+      "pluginId": "cordova-plugin-webserver",
+      "clobbers": [
+        "webserver"
+      ]
+    },
+    {
+      "id": "cordova-plugin-voip-local-server.VoIPLocalServer",
+      "file": "plugins/cordova-plugin-voip-local-server/www/voip-local-server.js",
+      "pluginId": "cordova-plugin-voip-local-server",
+      "clobbers": [
+        "VoIPLocalServer"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-add-swift-support": "2.0.2",
+    "cordova-plugin-android-permissions": "1.1.2",
+    "cordova-plugin-callkit": "1.1.0",
+    "cordova-plugin-device": "2.0.3",
+    "cordova-plugin-iosrtc": "6.0.20",
+    "cordova-plugin-networkinterface": "2.0.0",
+    "cordova-plugin-webserver": "1.1.0",
+    "cordova-plugin-voip-local-server": "1.0.0"
+  }
+}

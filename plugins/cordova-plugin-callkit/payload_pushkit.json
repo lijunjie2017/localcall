@@ -1,0 +1,12 @@
+{
+    "aps": {
+        "alert": "Test",
+        "badge": 42
+    },
+    "data": {
+        "Caller": {
+            "Username": "Alex",
+            "ConnectionId": "Alex123"
+        }
+    }
+}

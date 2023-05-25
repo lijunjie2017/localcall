@@ -1,0 +1,57 @@
+{
+  "_from": "github:hit0907/cordova-plugin-callkit",
+  "_id": "cordova-plugin-callkit@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-callkit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "github:hit0907/cordova-plugin-callkit",
+    "rawSpec": "github:hit0907/cordova-plugin-callkit",
+    "saveSpec": "github:hit0907/cordova-plugin-callkit",
+    "fetchSpec": null,
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "github:hit0907/cordova-plugin-callkit#3c81a1f3b492f639aa5afc84cda5520e66c727ec",
+  "_spec": "github:hit0907/cordova-plugin-callkit",
+  "_where": "D:\\workspace\\cordova-callkit-app",
+  "author": {
+    "name": "Matthew Khaw"
+  },
+  "bugs": {
+    "url": "https://github.com/mattkhaw/cordova-plugin-callkit/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-callkit",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin that lets you use iOS CallKit UI (with PushKit) and Android ConnectionService UI",
+  "homepage": "https://github.com/mattkhaw/cordova-plugin-callkit",
+  "keywords": [
+    "voip",
+    "cordova",
+    "push",
+    "callkit",
+    "pushkit",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-callkit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattkhaw/cordova-plugin-callkit.git"
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,51 @@
+{
+  "_from": "git+https://github.com/hit0907/cordova-plugin-voip-local-server.git",
+  "_id": "cordova-plugin-voip-local-server@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-voip-local-server",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/hit0907/cordova-plugin-voip-local-server.git",
+    "rawSpec": "git+https://github.com/hit0907/cordova-plugin-voip-local-server.git",
+    "saveSpec": "git+https://github.com/hit0907/cordova-plugin-voip-local-server.git",
+    "fetchSpec": "https://github.com/hit0907/cordova-plugin-voip-local-server.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/hit0907/cordova-plugin-voip-local-server.git#0ef1d72f4d02f7263dc2d8e48e35e02db2eeb12b",
+  "_spec": "git+https://github.com/hit0907/cordova-plugin-voip-local-server.git",
+  "_where": "D:\\workspace\\cordova-callkit-app",
+  "bugs": {
+    "url": "https://github.com/hit0907/cordova-plugin-voip-local-server/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-voip-local-server",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin voip local server",
+  "homepage": "https://github.com/hit0907/cordova-plugin-voip-local-server",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "webrtc",
+    "cordova:plugin"
+  ],
+  "license": "MIT",
+  "main": "www/voip-local-server.js",
+  "name": "cordova-plugin-voip-local-server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hit0907/cordova-plugin-voip-local-server.git"
+  },
+  "version": "1.0.0"
+}

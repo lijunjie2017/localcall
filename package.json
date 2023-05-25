@@ -1,0 +1,41 @@
+{
+  "name": "com.hit.dev.cordovacall",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^10.1.2",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-add-swift-support": "^2.0.2",
+    "cordova-plugin-android-permissions": "^1.1.2",
+    "cordova-plugin-callkit": "github:hit0907/cordova-plugin-callkit",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-iosrtc": "^6.0.20",
+    "cordova-plugin-networkinterface": "git+https://github.com/salbahra/cordova-plugin-networkinterface.git",
+    "cordova-plugin-voip-local-server": "git+https://github.com/hit0907/cordova-plugin-voip-local-server.git",
+    "cordova-plugin-webserver": "git+https://github.com/bykof/cordova-plugin-webserver.git"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-callkit": {},
+      "cordova-plugin-voip-local-server": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2"
+  }
+}
